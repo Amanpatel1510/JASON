@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+<!-- Start -->
+
+     <h3>JSON</h3>  <!-- heading -->
+
+
+    <script>
+     let example='{"<b>Name</b>":"Aman Singh Patel", "<b>Age</b>": 25 , "<b>Language</b>":["Hindi","English","French"], "DOB":"1997-10-15"}'  //  example is in string formate
+    
+    let parse=JSON.parse(example)   // with the help of JASON.parse it convert into object
+     
+    parse.DOB=new Date(parse.DOB)   // here I convert date formate
+    
+    // printing values and key
+    for ( const Detail in parse)
+    {
+    document.write("<br> <br> ",Detail +  " =  " + parse[Detail])
+}
+
+
+</script>
+
+   <!-- End -->
+</body>
+</html>
